@@ -1,8 +1,9 @@
-public class Test {
-    private int test;
+public class Test implements Runnable {
+    @Override
+    public void run() {
+    }
 
-    public static void getTest(int test) {
-        test = 0;
-        System.out.println(test);
+    public static void main(String[] args) {
+        new Thread(new Test()).start();
     }
 }

@@ -1,12 +1,12 @@
 package lesson5.homework;
 
 public class Employee {
-    public String fullName;
-    public String position;
-    public String email;
-    public String phoneNumber;
-    public double salary;
-    public int age;
+    private String fullName;
+    private String position;
+    private String email;
+    private String phoneNumber;
+    private double salary;
+    private int age;
 
     public Employee(String fullName, String position, String email, String phoneNumber, double salary, int age) {
         this.fullName = fullName;
@@ -15,6 +15,10 @@ public class Employee {
         this.phoneNumber = phoneNumber;
         this.salary = salary;
         this.age = age;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     @Override

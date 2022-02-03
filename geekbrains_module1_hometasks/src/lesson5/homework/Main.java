@@ -12,7 +12,7 @@ public class Main {
 
         for (Employee e: employees
              ) {
-            if (e.age > 40) {
+            if (e.getAge() >= 40) {
                 System.out.println(e + "\n");
             }
         }
