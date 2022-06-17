@@ -1,4 +1,4 @@
-package lesson1;
+package lesson1.classwork;
 
 import lesson1.classwork.enums.GeometryMath;
 import lesson1.classwork.enums.GeometryShape;

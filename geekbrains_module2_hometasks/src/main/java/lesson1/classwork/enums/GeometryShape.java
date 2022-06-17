@@ -15,5 +15,7 @@ public enum GeometryShape {
         return latinName;
     }
 
-    public abstract double perimeter();
- }
+    public double perimeter() {
+        return 0;
+    }
+}

@@ -9,27 +9,40 @@
     <url>http://maven.apache.org</url>
 
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-plugin-api</artifactId>
-            <version>3.8.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-core</artifactId>
-            <version>3.8.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-artifact</artifactId>
-            <version>3.8.4</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.25</version>
-        </dependency>
-    </dependencies>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.10.1</version>
+                    <configuration>
+                        <properties>
+                            <maven.compiler.source>17</maven.compiler.source>
+                            <maven.compiler.target>17</maven.compiler.target>
+                        </properties>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven</groupId>
+                                <artifactId>maven-plugin-api</artifactId>
+                                <version>3.8.4</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>org.apache.maven</groupId>
+                                <artifactId>maven-core</artifactId>
+                                <version>3.8.4</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>mysql</groupId>
+                                <artifactId>mysql-connector-java</artifactId>
+                                <version>8.0.25</version>
+                            </dependency>
+                        </dependencies>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 
     </project>

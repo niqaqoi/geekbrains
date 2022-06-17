@@ -7,7 +7,9 @@ public final class GeometryMath {
 
     public static double calcPerimeter(GeometryShape shapeType) {
         switch (shapeType) {
-            case  SQUARE -> return shapeType.perimeter();
-            case TRIANGLE -> return shapeType.perimeter();
+            case SQUARE -> shapeType.perimeter();
+            case TRIANGLE -> shapeType.perimeter();
+        }
+        return 0;
     }
 }
